@@ -1,0 +1,41 @@
+h1 {
+    color: rgb(230, 239, 255);
+    background-color: rgb(99, 54, 248);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 70%;
+    margin: 15px auto;
+    margin-bottom: 4px;
+    padding: 0.2em;
+} 
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(rgb(2, 7, 58),rgb(63, 76, 221),rgb(2, 7, 58));
+}
+
+img {
+    width: 100%;
+}
+
+.miniaturas, .principal, .legenda {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.imagem {
+    width: 16.66%;
+    float: left;
+}
+
+.legenda {
+    color: rgb(230, 239, 255);
+    background-color: rgb(99, 54, 248);
+    padding: 2px;
+    border-radius: 10px;
+    font-size: 30px;
+}

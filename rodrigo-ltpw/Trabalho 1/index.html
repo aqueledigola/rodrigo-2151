@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria dos Vingadores</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1><output id="titulo"> Título da 1ª Imagem </output></h1>
+        
+        <!-- =============Miniaturas============= -->
+        <div class="miniaturas">
+            <div class="imagem">
+                <img src="imagens/capitao_america.jpg" onmousemove="trocar('imagens/capitao_america.jpg','CAPITÃO AMÉRICA','Chris Evans')">
+            </div>
+
+            <div class="imagem">
+                <img src="imagens/gaviao_arqueiro.jpg" onmouseover="trocar('imagens/gaviao_arqueiro.jpg','GAVIÃO ARQUEIRO','Jeremy Renner')">
+            </div>
+
+            <div class="imagem">
+                <img src="imagens/homem_de_ferro.jpg" onmouseover="trocar('imagens/homem_de_ferro.jpg','HOMEM DE FERRO','Robert Downey Jr')">
+            </div>
+
+            <div class="imagem">
+                <img src="imagens/hulk.jpg" onmouseover="trocar('imagens/hulk.jpg','HULK','Mark Ruffalo')">
+            </div>
+
+            <div class="imagem">
+                <img src="imagens/thor.jpg" onmouseover="trocar('imagens/thor.jpg','THOR','Chris Hemsworth')">
+            </div>
+
+            <div class="imagem">
+                <img src="imagens/viuva_negra.jpg" onmouseover="trocar('imagens/viuva_negra.jpg','VIÚVA NEGRA','Scarlett Johansson')">
+            </div>
+        </div>
+        
+        <!-- =============Imagem Principal============= -->
+        <div class="principal">
+            <img src="imagens/capitao_america.jpg" id="imagem_principal">
+        </div>
+        
+        <!-- =============Legenda das Imagens============= -->
+        <div class="legenda">
+            <output id="leg"> Legenda da primeira imagem </output>
+        </div>
+    </main>
+</body>
+<script src="javascript/script.js"></script>
+</html>
