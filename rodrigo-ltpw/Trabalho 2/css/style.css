@@ -1,25 +1,21 @@
 body {
     margin: 0cm;
-    background-image: url(../imagens/fundo.jpg);
-    background-size: 100% 100%;
-    background-attachment: fixed;
+    background-color: white;
 }
 
 #pag {
-    width: 1000px;
     margin: auto;
     color: black;
     background-color: rgb(255, 255, 255);
 }
 
 header { 
-    background-image: url(../imagens/cabeça2.png);
-    background-color: white;
-    background-size: 1 30%;
+    background-image: url(../imagens/cabeça.png);
+    background-color: rgb(31, 31, 31);
+    background-size: 40% 100%;
     background-repeat: no-repeat;
     max-width: 100em;
-    padding: 32px;
-    
+    padding: 33px;
 }
 
 header h3 {
@@ -32,22 +28,23 @@ header p{
     font-size: 2.5em;
 }
 
-nav {
-    background-color: rgb(182, 14, 14);
-    color: rgb(248, 184, 184);
+#menu {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 1em;
     max-width: 100%;
+    min-height: 100px;
 }
 
-section {
-    background-color: rgb(196, 228, 255);
-    color: rgb(6, 37, 179);
+#conteudo {
+    background-color: rgb(31, 31, 31);
+    color: rgb(255, 255, 255);
     padding: 1em;
     max-width: 100%;
     min-height: 55em;
 }
 
-footer {
+#rodape {
     background-color: rgb(182, 14, 14);
     color: rgb(248, 184, 184);
     min-height: 3em;
@@ -65,7 +62,7 @@ footer {
 }
 
 #fechar{
-    position: absolute;
+    position: fixed;
     top: 30px;
     right: 80px; 
     width: 30px;
@@ -86,11 +83,18 @@ footer {
     border-radius: 10px;
 }
 
-#popup input {
+#login, #senha {
     width: 80%;
     padding: 2%;
     margin-bottom: 3%;
 
+}
+
+#click {
+    color: rgb(25, 35, 175);
+    width: 85%;
+    padding: 10px;
+    cursor: pointer;
 }
 
 #quadro a {
@@ -105,8 +109,4 @@ footer {
 #mensagem {
     color: rgb(255, 71, 71);
     display: none;
-}
-
-#teste {
-    color: rgb(25, 35, 175);
 }
