@@ -14,13 +14,12 @@ body {
 
 header { 
     background-image: url(../imagens/cabeça2.png);
+    background-color: white;
     background-size: 1 30%;
     background-repeat: no-repeat;
-    color: black;
-    height: 5cm;
-    max-width: 100%;
-    padding: 2cm;
-    text-align: right;
+    max-width: 100em;
+    padding: 32px;
+    
 }
 
 header h3 {
@@ -88,9 +87,10 @@ footer {
 }
 
 #popup input {
-    width: 100%;
+    width: 80%;
     padding: 2%;
     margin-bottom: 3%;
+
 }
 
 #quadro a {
@@ -107,3 +107,6 @@ footer {
     display: none;
 }
 
+#teste {
+    color: rgb(25, 35, 175);
+}
