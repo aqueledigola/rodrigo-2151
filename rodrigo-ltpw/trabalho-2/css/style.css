@@ -10,48 +10,49 @@ body {
 }
 
 header { 
-    background-image: url(../imagens/cabeça.png);
+    background-image: url(../imagens/cabeçalho.webp);
     background-color: rgb(43, 41, 41);
-    background-size: 40% 80%;
-    background-repeat: no-repeat;
-    background-position: 5px;
+    background-size: 1 80%;
+    background-repeat: repeat;
+    background-position: center;
     max-width: 100%;
     min-width: 100%;
-    padding: 40px;
-    position: fixed;
+    padding: 25px;
     top: 0%;
 }
 
-header h3 {
-    font-family: 'Smooch Sans', sans-serif;
-    font-size: 3em;
-    color: rgb(243, 12, 12);
-}
-
-header p{
-    font-size: 2.5em;
+.titulo {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 50px;
+    width: 60em;
 }
 
 #menu {
-    background-color: rgb(31, 28, 184);
+    background-image: url(../imagens/tracinhos.png);
+    background-color: rgb(32, 29, 226);
     color: rgb(255, 255, 255);
     max-width: 100%;
-    min-height: 43px;
-    max-height: 43px;
-    margin-top: 80px;
+    min-height: 50px;
+    max-height: 50px;
     border-bottom: 4px solid red;
+    margin-top: 7em;
 }
 
 #conteudo {
-    background-color: rgb(255, 255, 255);
+    background-image: url(../imagens/fundo_rodape.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 1em;
     max-width: 100%;
     min-height: 55em;
 }
 
 #rodape {
-    background-color: rgb(182, 14, 14);
-    color: rgb(248, 184, 184);
+    background-color: rgb(66, 66, 66);
+    background-repeat: repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
     min-height: 3em;
     max-height: 100%;
     padding: 1em;
@@ -118,9 +119,10 @@ header p{
 }
 
 ul li{
+    font-family: 'Nunito', sans-serif;
     float: left;
     width: 10%;
-    margin-left: 1em;
+    margin-left: 10px;
     margin-top: 12px;
     text-align: center;
     list-style: none;
@@ -134,11 +136,12 @@ ul li a {
 }
 
 ul li a:hover {
-    color: rgb(196, 196, 196);
+    font-weight: bold;
+    font-size: 22px;
 }
 
 img {
-    width: 30%;
+    width: 25%;
     float: left;
 }
 
@@ -148,18 +151,19 @@ img {
     margin-left: 5em;
     margin-top: 2em;
     text-align: center;
-    border: 1px solid gray;
+    border: 1px solid rgb(59, 59, 59);
     border-radius: 5px;
     padding: 1em 1em 1px 1em;
     min-height: 70px;
 }
 
 .imagem:hover {
-    border: 1px solid rgb(8, 8, 8);
+    border: 1px solid rgb(255, 255, 255);
 }
 
 .imagem a {
     text-decoration: none;
+    font-family: 'Nunito', sans-serif;
 }
 
 .imagem img {
@@ -167,7 +171,7 @@ img {
 }
 
 #legendas {
-    color: rgb(65, 65, 65);
+    color: rgb(226, 226, 226);
     font-size: 20px;
 }
 
