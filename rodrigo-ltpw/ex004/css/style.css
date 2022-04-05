@@ -1,6 +1,12 @@
 body {
     background-color: rgb(65, 42, 165);
     color: rgb(65, 42, 165);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+    font-size: 40px;
+    font-weight: bold;
 }
 
 #pag {
@@ -52,12 +58,20 @@ legend {
     font-weight: bold;
     font-size: 1.3em;
     background-color: rgb(36, 4, 112);
-    color: rgb(233, 220, 245);
+    color: rgb(234, 235, 241);
     padding: 2%;
     width: 50%;
     border-radius: 10px;
 }
 
 #msg {
+    display: none;
+}
+
+#card {
+    display: none;
+}
+
+#cnpj {
     display: none;
 }
