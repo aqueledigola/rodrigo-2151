@@ -20,6 +20,11 @@ function calculos(form) {
     } else {
         perc = 0
     }
+    if (pagamento == "cartao") {
+        document.getElementById("card").style.display = "block"
+    } else {
+        document.getElementById("card").style.display = "none"
+    }
     
     total = tot1 + tot2 + tot3 + tot4;
     desconto = total * perc;
@@ -27,25 +32,37 @@ function calculos(form) {
 
     //SAÍDA==================================================================
 
-    form.tot1.value = "R$" + tot1.toFixed(2);
-    form.tot2.value = "R$" + tot2.toFixed(2);
-    form.tot3.value = "R$" + tot3.toFixed(2);
-    form.tot4.value = "R$" + tot4.toFixed(2);
+    form.tot1.value = "R$" + tot1.toFixed(2).replace(".",",");
+    form.tot2.value = "R$" + tot2.toFixed(2).replace(".",",");
+    form.tot3.value = "R$" + tot3.toFixed(2).replace(".",",");
+    form.tot4.value = "R$" + tot4.toFixed(2).replace(".",",");
 
-    document.getElementById("total").value = total.toFixed(2);
-    document.getElementById("desconto").value = desconto.toFixed(2);
-    document.getElementById("apagar").value = apagar.toFixed(2);
+    document.getElementById("total").value = total.toFixed(2).replace(".",",");
+    document.getElementById("desconto").value = desconto.toFixed(2).replace(".",",");
+    document.getElementById("apagar").value = apagar.toFixed(2).replace(".",",");
 
 }
 
 function confirma(form) {
     total = form.total.value;
+    senha1 = form.senha1.value;
+    digitos = senha1.length
 
     if (form.login.value == "") {
         alert("O campo nome é obrigatório.");
         form.login.focus()
         return false;
 
+    } else if (digitos < 8) {
+        alert("A senha deve conter no mínimo 8 digitos.")
+        form.senha1.focus()
+        return false
+    
+    } else if (digitos > 10 ) {
+        alert("A senha não pode exceder 10 digitos.")
+        form.senha1.focus()
+        return false
+    
     } else if (form.senha1.value == "") {
         alert("O campo senha é obrigatório.");
         form.senha1.focus()
@@ -93,14 +110,71 @@ function pessoa(obj) {
     }
 }
 
-/*if (senha1[Text.length] < 8) {
-    alert("A senha deve conter no mínimo 8 digitos.")
-    form.senha1.focus()
-    return false
+function mascara_cpf(obj) {
+    if (obj.value.length == 3) {
+        obj.value += "."
+    }
+    if (obj.value.length == 7) {
+        obj.value += "."
+    }
+    if (obj.value.length == 11) {
+        obj.value += "-"
+    }
+}
 
-} else if (senha1[Text.length] > 10 ) {
-    alert("A senha não pode exceder 10 digitos.")
-    form.senha1.focus()
-    return false
+function mascara_cnpj(obj) {
+    if (obj.value.length == 2) {
+        obj.value += "."
+    }
+    if (obj.value.length == 6) {
+        obj.value += "."
+    }
+    if (obj.value.length == 10) {
+        obj.value += "/"
+    }
+    if (obj.value.length == 15) {
+        obj.value += "-"
+    }
+}
 
-}*/
+function mascara_telefone(obj) {
+    if (obj.value.length == 0) {
+        obj.value += "("
+    }
+    if (obj.value.length == 3) {
+        obj.value += ")"
+    }
+    if (obj.value.length == 9) {
+        obj.value += "-"
+    }
+}
+
+function mascara_cartao(obj) {
+    if (obj.value.length == 4) {
+        obj.value += " "
+    }
+    if (obj.value.length == 9) {
+        obj.value += " "
+    }
+    if (obj.value.length == 14) {
+        obj.value += " "
+    }
+}
+
+function salto(campo,digito) {
+    if (campo == "cpf") {
+        if (digito.length > 13) {
+            document.orcamento.telefone.focus()
+        }
+    }
+}
+
+function somente_numero(e) {
+    tecla = (window.event)?event.keyCode:e.which;
+
+    if ((tecla >= 48 && tecla <= 57) || (tecla >= 96 && tecla <= 105) || (tecla == 8) || (tecla >= 37 && tecla <= 39) || (tecla == 46) || (tecla == 116)) {
+        return true
+    } else {
+        return false
+    }
+}

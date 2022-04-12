@@ -43,16 +43,16 @@
                    
                     <div id="cpf">
                         <label for="cpf"> CPF </label>
-                        <input type="text" name="cpf" placeholder="000.000.000-00">
+                        <input type="text" name="cpf" maxlength="14" placeholder="000.000.000-00" onkeypress="mascara_cpf(this)" onkeyup="salto(this.name,this.value)" onkeydown="return somente_numero(event)">
                     </div>
                     
                     <div id="cnpj">
                         <label for="cnpj"> CNPJ </label>
-                        <input type="text" name="cnpj" placeholder="00.000.000/0000-00">
+                        <input type="text" name="cnpj" maxlength="18" placeholder="00.000.000/0000-00" onkeypress="mascara_cnpj(this)" onkeydown="return somente_numero(event)">
                     </div>
                     
                     <label for="telefone"> Telefone </label>
-                    <input type="tel" name="telefone" id="telefone" placeholder="(00)00000-0000" required>
+                    <input type="tel" name="telefone" maxlength="14" placeholder="(00)00000-0000" onkeypress="mascara_telefone(this)" onkeydown="return somente_numero(event)" required>
 
                     <label for="pagamento"> Forma de Pagamento </label>
                     <select name="pagamento" id="pagamento">
@@ -64,10 +64,10 @@
                         <legend> Cartão </legend>
 
                         <label for="cartao"> Nº do Cartão </label>
-                        <input type="text" name="cartao" placeholder="0000 0000 0000 0000">
+                        <input type="text" name="cartao" maxlength="19" placeholder="0000 0000 0000 0000" onkeypress="mascara_cartao(this)" onkeydown="return somente_numero(event)">
 
                         <label for="seguranca"> Código de Segurança </label>
-                        <input type="text" name="seguranca" placeholder="000">
+                        <input type="text" name="seguranca" maxlength="3" placeholder="000" onkeydown="return somente_numero(event)">
 
                         <label for="vencimento"> Data de Vencimento </label>
                         <input type="date" name="vencimento">
@@ -107,9 +107,9 @@
 
                         <tr>
                             <td colspan="4" align="right"> 
-                                <h3> Total ➜ R$<output id="total">0.00</output></h3>
-                                <h3> Desconto ➜ R$<output id="desconto">0.00</output></h3>
-                                <h3> Valor a Pagar ➜ R$<output id="apagar">0.00</output></h3>
+                                <h3> Total ➜ R$<output id="total">0,00</output></h3>
+                                <h3> Desconto ➜ R$<output id="desconto">0,00</output></h3>
+                                <h3> Valor a Pagar ➜ R$<output id="apagar">0,00</output></h3>
                             </td>
                         </tr>
                     </table>
