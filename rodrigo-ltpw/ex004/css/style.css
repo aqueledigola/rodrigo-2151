@@ -64,14 +64,9 @@ legend {
     border-radius: 10px;
 }
 
+#msg, #card, #cnpj {
+    display: none;
+}
 #msg {
-    display: none;
-}
-
-#card {
-    display: none;
-}
-
-#cnpj {
-    display: none;
+    color: rgb(232, 9, 9);
 }
