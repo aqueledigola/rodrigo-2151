@@ -86,8 +86,8 @@ nav a {
     font-size: 1em;
 }
 
-/*.sobre {
-    background-color: #0D1F59;
+.sobre {
+    background-color: #b81a01;
     background-image: url(../img/detalhe.png);
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -134,11 +134,11 @@ nav a {
 }
 
 .rodape {
-    background-color: #0D1F59;
+    background-color: #b81a01;
     padding: 25px;
     color: white;
     text-align: center;
     font-size: 0.8em;
     letter-spacing: 5px;
     margin-top: 10px;
-}*/
+}
