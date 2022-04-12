@@ -33,20 +33,24 @@
                 
                 <fieldset>
                     <legend> Dados de Pagamento </legend>
-                    <label for="usuario"> Tipo de acesso </label>
-
-                    <input type="radio" name="tipo" value="Pessoa Física" checked onchange="pessoa('pf')">
-                    <label for="pessoa"> Pessoa Física </label>
-
-                    <input type="radio" name="tipo" value="Pessoa Jurídica" onchange="pessoa('pj')">
-                    <label for="pessoa"> Pessoa Jurídica </label><br>
+                    <label for="usuario"> Tipo de Acesso </label> <div class="clear"></div>
                     
-                    <label for="cpf"> CPF </label>
-                    <input type="text" name="cpf" placeholder="000.000.000-00">
-
-                    <label for="cnpj" id="cnpj"> CNPJ </label>
-                    <input type="text" name="cnpj" placeholder="00.000.000/0000-00">
-
+                    <input type="radio" name="tipo" value="Pessoa Física" checked onchange="pessoa('pf')"> 
+                    <label for="pessoa"> Pessoa Física </label>
+                    
+                    <input type="radio" name="tipo" value="Pessoa Jurídica" onchange="pessoa('pj')"> 
+                    <label for="pessoa"> Pessoa Jurídica </label><br>
+                   
+                    <div id="cpf">
+                        <label for="cpf"> CPF </label>
+                        <input type="text" name="cpf" placeholder="000.000.000-00">
+                    </div>
+                    
+                    <div id="cnpj">
+                        <label for="cnpj"> CNPJ </label>
+                        <input type="text" name="cnpj" placeholder="00.000.000/0000-00">
+                    </div>
+                    
                     <label for="telefone"> Telefone </label>
                     <input type="tel" name="telefone" id="telefone" placeholder="(00)00000-0000" required>
 
