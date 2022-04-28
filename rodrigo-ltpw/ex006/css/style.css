@@ -1,0 +1,29 @@
+body {
+    background-color: gray;
+
+    width: 50%;
+    margin-left: 25%;
+}
+
+#tituloCadastro {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.container {
+    background-color: white;
+    
+    border-radius: 15px;
+    padding: 50px;
+    
+    margin-top: 50px;
+}
+
+#tipoPessoa {
+    padding-top: 20px;
+
+}
+
+#inputCnpj {
+    display: none;
+}
