@@ -1,47 +1,48 @@
-function pessoa(obj) {
-    if (obj == "pf") {
-        document.getElementById("inputCpf").style.display = "block";
-        document.getElementById("inputCnpj").style.display = "none";
-    } else {
-        document.getElementById("inputCpf").style.display = "none";
-        document.getElementById("inputCnpj").style.display = "block";
+function confirma(form) {
+    inputSenha = form.inputSenha.value;
+    digitos = inputSenha.length
+    
+    if (digitos < 8) {
+        alert("A senha deve conter no mínimo 8 digitos.")
+        form.inputSenha.focus()
+        return false
+    
+    } else if (digitos > 10 ) {
+        alert("A senha não pode exceder 10 digitos.")
+        form.inputSenha.focus()
+        return false
+    
+    } else if (form.inputSenha.value != form.inputSenha2.value) {
+        alert("As senhas não coincidem.");
+        form.inputSenha2.focus()
+        return false
+
     }
+}
+function senha() {
+    senha1 = form.inputSenha.value
+    senha2 = form.inputSenha2.value
+
+    if (senha1 != senha2) {
+        document.getElementById("msg").style.display = "block";
+    } else {
+        document.getElementById("msg").style.display = "none";
+    }
+}
+function plano1(obj) {
+    document.getElementById("basico").style.backgroundColor = "rgb(221, 0, 0)";
+    document.getElementById("padrao").style.backgroundColor = "rgba(221, 0, 0, 0.7)";
+    document.getElementById("premium").style.backgroundColor = "rgba(221, 0, 0, 0.7)";
 }
 
-// MÁSCARAS DE DÍGITOS =============================
-function mascara_telefone(obj) {
-    if (obj.value.length == 0) {
-        obj.value += "("
-    } 
-    if (obj.value.length == 3) {
-        obj.value += ")"
-    }
-    if (obj.value.length == 9) {
-        obj.value += "-"
-    }
+function plano2(obj) {
+    document.getElementById("basico").style.backgroundColor = "rgba(221, 0, 0, 0.7)";
+    document.getElementById("padrao").style.backgroundColor = "rgb(221, 0, 0)";
+    document.getElementById("premium").style.backgroundColor = "rgba(221, 0, 0, 0.7)";    
 }
-function mascara_cpf(obj) {
-    if (obj.value.length == 3) {
-        obj.value += "."
-    }
-    if (obj.value.length == 7) {
-        obj.value += "."
-    }
-    if (obj.value.length == 11) {
-        obj.value += "-"
-    }
-}
-function mascara_cnpj(obj) {
-    if (obj.value.length == 2) {
-        obj.value += "."
-    }
-    if (obj.value.length == 6) {
-        obj.value += "."
-    }
-    if (obj.value.length == 10) {
-        obj.value += "/"
-    }
-    if (obj.value.length == 15) {
-        obj.value += "-"
-    }
+
+function plano3(obj) {
+    document.getElementById("basico").style.backgroundColor = "rgba(221, 0, 0, 0.7)";
+    document.getElementById("padrao").style.backgroundColor = "rgba(221, 0, 0, 0.7)";
+    document.getElementById("premium").style.backgroundColor = "rgb(221, 0, 0)"; 
 }

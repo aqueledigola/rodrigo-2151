@@ -8,94 +8,100 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Fonte personalizada -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css">
     
-    <title>Cadastre-se no #####</title>
+    <title>Cansou de ver filmes com anúncio? Cadastre-se agora na RODFLIX</title>
   </head>
   
   <body>
     <section class="container">
-      <h1 id="tituloCadastro">Cadastre-se</h1>
-      <form class="row g-3">
-        
-        <!-- ### NOME ### -->
-        <div class="col-md-8">
-          <label for="inputNome" class="form-label">Nome completo</label>
-          <input type="text" class="form-control" required>
-        </div>
-        
-        <!-- ### TELEFONE ### -->
-        <div class="col-md-4">
-          <label for="inputTelefone" class="form-label">Telefone</label>
-          <input type="tel" class="form-control" name="inputTelefone" maxlength="14" placeholder="(00)00000-0000" required onkeypress="mascara_telefone(this)">
+      <h1 id="tituloCadastro">Cadastre-se na RODFLIX</h1>
+      
+      <form class="row g-3" action="envio.html" name="form" id="form" onsubmit="return confirma(this)">
+        <!-- ### NOME DE USUÁRIO ### -->
+        <div class="col-md-6">
+          <label for="inputNome" class="form-label">Nome de usuário</label>
+          <input type="text" class="form-control" name="inputNome" required>
         </div>
 
         <!-- ### E-MAIL ### -->
-        <div class="col-md-8">
+        <div class="col-md-6">
           <label for="inputEmail" class="form-label">E-mail</label>
           <input type="email" class="form-control" name="inputEmail" placeholder="email@dominio.com" required>
         </div>
 
-        <!-- ### DATA DE NASCIMENTO ### -->
-        <div class="col-md-4">
-          <label for="inputDataNasc" class="form-label">Data de nascimento</label>
-          <input type="date" class="form-control" id="inputDataNasc" required>
+        <!-- ### SENHA 1 ### -->
+        <div class="col-md-6">
+          <label for="inputSenha" class="form-label">Senha</label>
+          <input type="password" class="form-control" name="inputSenha" required oninput="senha()">
+        </div><br>
+
+        <!-- ### SENHA 2 ### -->
+        <div class="col-md-6">
+          <label for="inputSenha2" class="form-label">Confirme sua senha</label>
+          <input type="password" class="form-control" name="inputSenha2" required oninput="senha()">
         </div>
-        
-        <!-- ### TIPO DE PESSOA ### -->
+      
+        <!-- ### MENSAGEM DA SENHA ### -->
         <div class="col-12">
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="tipo" value="pessoa_fisica" checked onchange="pessoa('pf')">
-            <label class="form-check-label" for="pessoa">Pessoa Física</label>
-          </div>
-          
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="tipo" value="pessoa_juridica" onchange="pessoa('pj')">
-            <label class="form-check-label" for="pessoa">Pessoa Jurídica</label>
-          </div>
+          <p id="msg"> * AS SENHAS NÃO COINCIDEM * </p>
         </div>
 
+        <!-- ### TIPOS DE PLANOS ### -->
         <div class="col-12">
-          <!-- ### CPF ### -->
-          <div class="col-md-6" id="inputCpf">
-            <label for="inputCpf" class="form-label">CPF</label>
-            <input type="text" name="inputCpf" maxlength="14" placeholder="000.000.000-00" class="form-control" onkeypress="mascara_cpf(this)">
-          </div>
-          
-          <!-- ### CNPJ ### -->
-          <div class="col-md-6" id="inputCnpj">
-            <label for="inputCnpj" class="form-label">CNPJ</label>
-            <input type="text" name="inputCnpj" maxlength="18" placeholder="00.000.000/0000-00" class="form-control" onkeypress="mascara_cnpj(this)">
-          </div>
+          <h2 id="tituloPlano">Escolha seu plano:</h2>
         </div>
-        
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">State</label>
-          <select id="inputState" class="form-select">
-            <option selected>Choose...</option>
-            <option>...</option>
-          </select>
+        <div class="col-12" id="planos">
+          <section id="basico" onclick="plano1(this)">
+            <div>BÁSICO</div>
+          </section>
+
+          <section id="padrao" onclick="plano2(this)">
+            <div>PADRÃO</div>
+          </section>
+
+          <section id="premium" ondblclick="plano3(this)">
+            <div>PREMIUM</div>
+          </section>
         </div>
-        
-        <div class="col-md-2">
-          <label for="inputZip" class="form-label">Zip</label>
-          <input type="text" class="form-control" id="inputZip">
+
+        <!-- ### TABELA DE PLANOS ### -->
+        <div class="col-12" id="tabela">  
+          <table class="table" align="center" cellpadding="20">
+            <tr>
+              <td><h6>Preço por mês</h6></td>
+              <td><h6>R$25,00</h6></td>
+              <td><h6>R$39,90</h6></td>
+              <td><h6>R$55,90</h6></td>
+            </tr>
+
+            <tr>
+              <td><h6>Qualidade do vídeo</h6></td>
+              <td><h6>Boa</h6></td>
+              <td><h6>Melhor</h6></td>
+              <td><h6>Superior</h6></td>
+            </tr>
+
+            <tr>
+              <td><h6>Resolução</h6></td>
+              <td><h6>480p</h6></td>
+              <td><h6>1080p</h6></td>
+              <td><h6>4K+HDR</h6></td>
+            </tr>
+          </table>
         </div>
-        
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
-          </div>
-        </div>
-        
-        <div class="col-12">
-          <button type="button" class="btn btn-primary">Continuar</button>
-          <button type="reset" class="btn btn-outline-primary">Cancelar</button>
+
+        <!-- ### BOTÕES ### -->
+        <div class="col-12" id="inputButton">
+          <button type="submit" id="inputButao1" class="btn btn-danger">Continuar</button>
+          <button type="reset" id="inputButao2" class="btn btn-outline-danger">Cancelar</button>
         </div>  
 
       </form>
