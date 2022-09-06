@@ -1,0 +1,128 @@
+/* RESET */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: auto;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --white: #ffffff;
+    --black: #111111;
+    --gray: #535353;
+    --blue: #127EE1;
+    --background-gray: #E4E4E4; 
+    --background-white: #FFFDFD;
+}
+/* ////////////////////// */
+
+.body-container {
+    display: grid;
+    grid-template-areas: "h"
+                         "m"
+                         "f"
+    ;
+}
+
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+
+/*/////////////////// HEADER ////////////////////*/
+header {
+    grid-area: h;
+
+    background-color: var(--black);
+
+    width: 100%;
+    height: auto;
+
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+} 
+
+header .search-box {
+    padding: 30px 50px;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .search-box .search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header .search-box .search img {
+    width: 28px;
+    transition: .3s;
+}
+
+header .search-box .search img:hover {
+    transform: scale(1.1);
+}
+
+header nav {
+    width: 100%;
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--white);
+    padding: 5px 20px;
+    transition: .3s;
+}
+
+header nav ul li a:hover {
+    color: var(--black);
+    background: var(--white);
+    cursor: pointer;
+}
+
+header nav ul li a:hover img {
+    filter: invert(1);
+}
+
+header nav ul li a:first-child {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header nav ul li a.active {
+    color: var(--black);
+    background: var(--white);
+    cursor: default;
+}
+
+header nav ul li a.active img {
+    filter: invert(1);
+}
