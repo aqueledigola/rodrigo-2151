@@ -1,4 +1,4 @@
-/* RESET */
+/* ///////////////////////// RESET */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 * {
@@ -27,10 +27,11 @@ body {
     max-width: 1366px;
     margin: 0 auto;
 }
-
 /* /////////////////////////////// */
 
-/* HEADER */
+
+
+/* //////////////////////// HEADER */
 header {
     background-color: var(--black);
 
@@ -51,19 +52,19 @@ header .search-box {
     align-items: center;
 }
 
-header .search-box .search {
+header .search-box .search-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
 }
 
-header .search-box .search img {
+header .search-box .search-items img {
     width: 28px;
     transition: .3s;
 }
 
-header .search-box .search img:hover {
+header .search-box .search-items img:hover {
     transform: scale(1.1);
 }
 
@@ -119,17 +120,64 @@ header nav ul li a.active {
 header nav ul li a.active img {
     filter: invert(1);
 }
+/* /////////////////////////////// */
 
 
 
+/* ////////////////////////// MAIN */
 main {
     padding: 50px 150px;
 }
 
+.flex-gap {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* carrousel */
 .carousel-prev-btn {
     transform: translateX(-100%);
 }
 
 .carousel-next-btn {
     transform: translateX(100%);
+}
+
+/* linkcard */
+.linkcards {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    overflow-x: auto;
+    gap: 50px;
+}
+
+.linkcard-item img{
+    width: 100%;
+    min-width: 80px;
+}
+
+@media (max-width: 1160px) {
+    .linkcards {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 960px) {
+    main {
+        padding: 50px 100px;
+    }
+}
+
+@media (max-width: 728px) {
+    main {
+        padding: 50px 0;
+    }
+
+    .linkcards {
+        padding: 0 20px;
+    }
 }

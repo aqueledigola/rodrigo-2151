@@ -25,12 +25,12 @@
                 <div class="search-box">
                     <a href="index.html"><img width="150px" src="img/logo_hor.png"></a>
 
-                    <div class="search">
+                    <div class="search-items">
                         <a href=""><img src="img/icon_user.png"></a>
                         <a href=""><img src="img/icon_fav.png"></a>
                         <a href=""><img src="img/icon_cart.png"></a>
-                    </div>
-                </div>
+                    </div> <!--search-items-->
+                </div> <!--search-box-->
 
                 <nav>
                     <ul>
@@ -38,36 +38,94 @@
                         <li><a href="promo.html">promoções</a></li>
                         <li><a href="categoria.html">categorias</a></li>
                         <li><a href="computadores.html">computadores</a></li>
-                    </ul>
-                </nav>
-            </div>
+                    </ul> <!--ul-->
+                </nav> <!--nav-->
+            </div> <!--max-container-->
             <hr style="width: 100%; height: 5px; background: var(--blue); border: none; margin: 0; opacity: 1;">
-        </header>
+        </header> <!--header-->
 
         <main>
             <div class="max-container">
-                <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="true">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <div class="flex-gap">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div> <!--carousel-indicators-->
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="img/carroussel-item1.png" class="d-block w-100">
+                            </div> <!--carousel-item-->
+
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="img/carroussel-item1.png" class="d-block w-100">
+                            </div> <!--carousel-item-->
+
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="img/carroussel-item1.png" class="d-block w-100">
+                            </div> <!--carousel-item-->
+                        </div> <!--carousel-inner-->
+                    </div> <!--carousel-->
+
+                    <div class="linkcards">
+                        <a href="#" class="linkcard-item"><img src="img/box1.png"></a>
+                        <a href="#" class="linkcard-item"><img src="img/box2.png"></a>
+                        <a href="#" class="linkcard-item"><img src="img/box3.png"></a>
+                        <a href="#" class="linkcard-item"><img src="img/box4.png"></a>
+                        <a href="#" class="linkcard-item"><img src="img/box5.png"></a>
+                        <a href="#" class="linkcard-item"><img src="img/box6.png"></a>
                     </div>
+                    <!-- <div class="container text-center">
+                        <div class="row" style="overflow-x: auto;">
+                            <div class="col-3">
+                                <div class="card" style="width: 100%; min-width: 200px;">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
 
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="img/carroussel-item1.png" class="d-block w-100">
-                        </div>
+                            <div class="col-3">
+                                <div class="card" style="width: 100%; min-width: 200px;">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-3">
+                                <div class="card" style="width: 100%; min-width: 200px;">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <div class="carousel-item" data-bs-interval="10000">
-                            <img src="img/carroussel-item1.png" class="d-block w-100">
+                            <div class="col-3">
+                                <div class="card" style="width: 100%; min-width: 200px;">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="carousel-item" data-bs-interval="10000">
-                            <img src="img/carroussel-item1.png" class="d-block w-100">
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    </div> -->
+                </div> <!--flex-gap-->
+            </div> <!--max-content-->
         </main>
 
     </div>
