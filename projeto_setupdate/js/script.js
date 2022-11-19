@@ -1,8 +1,13 @@
 const items = [
     {
         id: 11409,
-        img: "../img/prod_1.png",
+        img: "../img/prod1.png",
         nome: "SSD Kingston A400, 240GB, Sata III, Leitura 500MBs Gravação 350MBs, SA400S37/240G",
+
+        other1: "../img/prod1_other1.png",
+        other2: "../img/prod1_other2.png",
+        other3: "../img/prod1_other3.png",
+        other4: "../img/prod1_other4.png",
 
         rate1: "../img/star_on.png",
         rate2: "../img/star_on.png",
@@ -25,8 +30,13 @@ const items = [
 
     {
         id: 21508,
-        img: "../img/prod_2.png",
+        img: "../img/prod2.png",
         nome: "Processador AMD Ryzen 5 3600 3.6GHz (4.2GHz Turbo), 6-Cores 12-Threads, Cooler Wraith Stealth, AM4, 100-1",
+
+        other1: "../img/prod2_other1.png",
+        other2: "../img/prod2_other2.png",
+        other3: "../img/prod2_other3.png",
+        other4: "../img/prod2_other4.png",
 
         rate1: "../img/star_on.png",
         rate2: "../img/star_on.png",
@@ -49,8 +59,13 @@ const items = [
 
     {
         id: 31407,
-        img: "../img/prod_3.png",
+        img: "../img/prod3.png",
         nome: "Cadeira Gamer Setupdate Black Throne, Reclinável, 4D, Suporta Até 180KG, Branco E Preto",
+
+        other1: "../img/prod3_other1.png",
+        other2: "../img/prod3_other2.png",
+        other3: "../img/prod3_other3.png",
+        other4: "../img/prod3_other4.png",
 
         rate1: "../img/star_on.png",
         rate2: "../img/star_on.png",
@@ -73,8 +88,13 @@ const items = [
 
     {
         id: 41506,
-        img: "../img/prod_4.png",
+        img: "../img/prod4.png",
         nome: "Teclado Gamer Logitech Prodigy G213, RGB, Black, ABNT2, 920-009438",
+
+        other1: "../img/prod4_other1.png",
+        other2: "../img/prod4_other2.png",
+        other3: "../img/prod4_other3.png",
+        other4: "../img/prod4_other4.png",
         
         rate1: "../img/star_on.png",
         rate2: "../img/star_on.png",
@@ -97,8 +117,13 @@ const items = [
 
     {
         id: 51305,
-        img: "../img/prod_5.png",
+        img: "../img/prod5.png",
         nome: "Processador AMD Athlon 3000G 3.5GHz + Cooler AMD Wraith Stealth",
+
+        other1: "../img/prod5_other1.png",
+        other2: "../img/prod5_other2.png",
+        other3: "../img/prod5_other3.png",
+        other4: "../img/prod5_other4.png",
         
         rate1: "../img/star_on.png",
         rate2: "../img/star_on.png",
@@ -121,8 +146,13 @@ const items = [
 
     {
         id: 12309,
-        img: "../img/prod_6.png",
+        img: "../img/prod6.png",
         nome: "PC Gamer S-Gamer Custo Beneficio 2022 Ryzen 5 5600X / NVIDIA GeForce RTX 3060 / DDR4 16GB(2x8) / SSD 480GB",
+
+        other1: "../img/prod6_other1.png",
+        other2: "../img/prod6_other2.png",
+        other3: "../img/prod6_other3.png",
+        other4: "../img/prod6_other4.png",
         
         rate1: "../img/star_on.png",
         rate2: "../img/star_on.png",
@@ -135,6 +165,8 @@ const items = [
         desconto: 15,
         newprice: 7797.17 - [(7797.17 * 15) / 100],
 
+        parc: 12,
+
         quant: 0,
         area: 2
     },
@@ -142,8 +174,13 @@ const items = [
 
     {
         id: 22408,
-        img: "../img/prod_7.png",
+        img: "../img/prod7.png",
         nome: "PC Gamer S-Gamer FrameMaster AMD Ryzen 5 5600X / NVIDIA GeForce RTX 2060 / 8GB DDR4 / SSD 240GB",
+
+        other1: "../img/prod7_other1.png",
+        other2: "../img/prod7_other2.png",
+        other3: "../img/prod7_other3.png",
+        other4: "../img/prod7_other4.png",
         
         rate1: "../img/star_on.png",
         rate2: "../img/star_on.png",
@@ -156,6 +193,8 @@ const items = [
         desconto: 15,
         newprice: 6725.42 - [(6725.42 * 15) / 100],
 
+        parc: 12,
+
         quant: 0,
         area: 2
     },
@@ -163,8 +202,13 @@ const items = [
 
     {
         id: 32407,
-        img: "../img/prod_8.png",
+        img: "../img/prod8.png",
         nome: "PC Gamer S-Gamer Brave AMD Ryzen 5 7600X / NVIDIA GeForce RTX 3070 / 16GB DDR5 / SSD 240GB",
+
+        other1: "../img/prod8_other1.png",
+        other2: "../img/prod8_other2.png",
+        other3: "../img/prod8_other3.png",
+        other4: "../img/prod8_other4.png",
         
         rate1: "../img/star_on.png",
         rate2: "../img/star_on.png",
@@ -177,6 +221,8 @@ const items = [
         desconto: 15,
         newprice: 11961.74 - [(11961.74 * 15) / 100],
 
+        parc: 12,
+
         quant: 0,
         area: 2
     },
@@ -184,8 +230,13 @@ const items = [
 
     {
         id: 42406,
-        img: "../img/prod_9.png",
+        img: "../img/prod9.png",
         nome: "PC Gamer T-Gamer Prodigy AMD Ryzen 5 5600G / 16GB DDR4 / SSD 480GB",
+
+        other1: "../img/prod9_other1.png",
+        other2: "../img/prod9_other2.png",
+        other3: "../img/prod9_other3.png",
+        other4: "../img/prod9_other4.png",
         
         rate1: "../img/star_on.png",
         rate2: "../img/star_on.png",
@@ -197,6 +248,8 @@ const items = [
         oldprice: 3933.75,
         desconto: 15,
         newprice: 3933.75 - [(3933.75 * 15) / 100],
+
+        parc: 12,
 
         quant: 0,
         area: 2
@@ -205,8 +258,13 @@ const items = [
 
     {
         id: 52405,
-        img: "../img/prod_10.jpg",
+        img: "../img/prod10.jpg",
         nome: "PC Gamer T-Gamer Prodigy AMD Ryzen 5 5600G / 16GB DDR4 / SSD 480GB",
+
+        other1: "../img/prod10_other1.png",
+        other2: "../img/prod10_other2.png",
+        other3: "../img/prod10_other3.png",
+        other4: "../img/prod10_other4.png",
         
         rate1: "../img/star_on.png",
         rate2: "../img/star_on.png",
@@ -218,6 +276,8 @@ const items = [
         oldprice: 3933.75,
         desconto: 15,
         newprice: 3933.75 - [(3933.75 * 15) / 100],
+
+        parc: 12,
 
         quant: 0,
         area: 2 
@@ -227,7 +287,7 @@ const items = [
 
 let containerProdutos1 = document.getElementById("produtos_area1");
 let containerProdutos2 = document.getElementById("produtos_area2");
-let containerProdutos3 = document.getElementById("produto-compra");
+let containerProdutos3 = document.getElementById("produto_compra");
 
 function iniciarLoja() {
     const area1 = items.filter(p => p.area === 1);
@@ -270,12 +330,13 @@ function iniciarLoja() {
             </a>
         `;
     }) 
+    
     // PRIMEIRA LINHA DE PRODUTOS
     
     area2.map((val)=> {
         containerProdutos2.innerHTML += 
         `
-            <a href="">
+            <a href="comprar.html?produto=`+val.id+`">
                 <div class="card-item">
                     <div class="card-img">
                         <img src="`+val.img+`">
@@ -318,26 +379,25 @@ function url() {
 
     let numid = idparam * 1;
     const compra = items.filter(p => p.id === numid);
-    console.log(compra);
 
     compra.map((val)=> {
         containerProdutos3.innerHTML += 
         `
             <div class="buy-area">
                 <div class="other-img">
-                    <img src="`+val.img+`">
-                    <img src="`+val.img+`">
-                    <img src="`+val.img+`">
-                    <img src="`+val.img+`">     
+                    <img src="`+val.other1+`">
+                    <img src="`+val.other2+`">
+                    <img src="`+val.other3+`">
+                    <img src="`+val.other4+`">     
                 </div> <!--other-img-->
 
                 <div class="main-img">
-                    <img src="img/prod_1.png">
+                    <img src="`+val.img+`">
                 </div> <!--main-img-->
 
                 <div class="buy-container">
                     <div class="content">
-                        <h1>SSD Kingston A400, 240GB, Sata III, Leitura 500MBs Gravação 350MBs, SA400S37/240G</h1>
+                        <h1>`+val.nome+`</h1>
 
                         <div class="info">
                             <span> ° mais vendido</span>
@@ -351,25 +411,25 @@ function url() {
                         </div>
 
                         <div class="rate">
-                            <img src="img/star_off.png">
-                            <img src="img/star_off.png">
-                            <img src="img/star_off.png">
-                            <img src="img/star_off.png">
-                            <img src="img/star_off.png">
+                            <img src="`+val.rate1+`">
+                            <img src="`+val.rate2+`">
+                            <img src="`+val.rate3+`">
+                            <img src="`+val.rate4+`">
+                            <img src="`+val.rate5+`">
 
-                            <h2>(123)</h2>
+                            <h2>(`+val.avalia+`)</h2>
                         </div>
 
                         <div class="price">
                             <div class="desc">
-                                <h3>R$ 123,14 </h3>
-                                <span> 41% </span>
+                                <h3>R$ `+val.oldprice.toFixed(2).replace(".",",")+`</h3>
+                                <span> `+val.desconto+`% </span>
                             </div>
                             
-                            <h4>R$ 123,12</h4>
+                            <h4>R$ `+val.newprice.toFixed(2).replace(".",",")+`</h4>
                         </div>
 
-                        <h5>8x sem churros</h5>
+                        <h5>`+val.parc+`x sem juros no cartão</h5>
                     </div> <!--content-->
 
                     <button type="button" class="btn btn-primary">Comprar</button>
@@ -378,7 +438,6 @@ function url() {
         `;
     })
 }
-
 
 url();
 iniciarLoja();

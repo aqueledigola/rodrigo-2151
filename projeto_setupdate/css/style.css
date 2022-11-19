@@ -16,6 +16,10 @@ body {
     overflow-x: hidden;
 }
 
+body.coming {
+    overflow-y: hidden;
+}
+
 body::-webkit-scrollbar {
     width: 7px;
 }
@@ -343,6 +347,11 @@ main .card-item .card-img {
     height: 50%;
 }
 
+main .card-item .card-img img {
+    height: 90%;
+    width: auto;
+}
+
 main .card-item .content {
     padding: 20px 10px;
 
@@ -522,7 +531,7 @@ main.coming {
     align-items: center;
     justify-content: center;
     padding: 100px 0;
-    height: 80vh;
+    height: 100vh;
 }
 
 main.coming .filter-blur {
@@ -598,6 +607,7 @@ main.compra .other-img {
 }
 
 main.compra .other-img img {
+    background-color: var(--background-gray);
     width: 100%;
     height: auto;
 }
@@ -613,8 +623,8 @@ main.compra .main-img {
 }
 
 main.compra .main-img img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 90%;
 }
 
 main.compra .buy-container {
