@@ -1,19 +1,19 @@
 const items = [
     {
         id: 11409,
-        img: "../img/prod1.png",
+        img: "../images/prod1.png",
         nome: "SSD Kingston A400, 240GB, Sata III, Leitura 500MBs Gravação 350MBs, SA400S37/240G",
 
-        other1: "../img/prod1_other1.png",
-        other2: "../img/prod1_other2.png",
-        other3: "../img/prod1_other3.png",
-        other4: "../img/prod1_other4.png",
+        other1: "../images/prod1_other1.png",
+        other2: "../images/prod1_other2.png",
+        other3: "../images/prod1_other3.png",
+        other4: "../images/prod1_other4.png",
 
-        rate1: "../img/star_on.png",
-        rate2: "../img/star_on.png",
-        rate3: "../img/star_on.png",
-        rate4: "../img/star_on.png",
-        rate5: "../img/star_off.png", 
+        rate1: "../images/star_on.png",
+        rate2: "../images/star_on.png",
+        rate3: "../images/star_on.png",
+        rate4: "../images/star_on.png",
+        rate5: "../images/star_off.png", 
         avalia: "8.314",
 
         oldprice: 289.00,
@@ -30,19 +30,19 @@ const items = [
 
     {
         id: 21508,
-        img: "../img/prod2.png",
+        img: "../images/prod2.png",
         nome: "Processador AMD Ryzen 5 3600 3.6GHz (4.2GHz Turbo), 6-Cores 12-Threads, Cooler Wraith Stealth, AM4, 100-1",
 
-        other1: "../img/prod2_other1.png",
-        other2: "../img/prod2_other2.png",
-        other3: "../img/prod2_other3.png",
-        other4: "../img/prod2_other4.png",
+        other1: "../images/prod2_other1.png",
+        other2: "../images/prod2_other2.png",
+        other3: "../images/prod2_other3.png",
+        other4: "../images/prod2_other4.png",
 
-        rate1: "../img/star_on.png",
-        rate2: "../img/star_on.png",
-        rate3: "../img/star_on.png",
-        rate4: "../img/star_on.png",
-        rate5: "../img/star_on.png", 
+        rate1: "../images/star_on.png",
+        rate2: "../images/star_on.png",
+        rate3: "../images/star_on.png",
+        rate4: "../images/star_on.png",
+        rate5: "../images/star_on.png", 
         avalia: "5.942",
 
         oldprice: 1528.24,
@@ -59,19 +59,19 @@ const items = [
 
     {
         id: 31407,
-        img: "../img/prod3.png",
+        img: "../images/prod3.png",
         nome: "Cadeira Gamer Setupdate Black Throne, Reclinável, 4D, Suporta Até 180KG, Branco E Preto",
 
-        other1: "../img/prod3_other1.png",
-        other2: "../img/prod3_other2.png",
-        other3: "../img/prod3_other3.png",
-        other4: "../img/prod3_other4.png",
+        other1: "../images/prod3_other1.png",
+        other2: "../images/prod3_other2.png",
+        other3: "../images/prod3_other3.png",
+        other4: "../images/prod3_other4.png",
 
-        rate1: "../img/star_on.png",
-        rate2: "../img/star_on.png",
-        rate3: "../img/star_on.png",
-        rate4: "../img/star_on.png",
-        rate5: "../img/star_off.png",
+        rate1: "../images/star_on.png",
+        rate2: "../images/star_on.png",
+        rate3: "../images/star_on.png",
+        rate4: "../images/star_on.png",
+        rate5: "../images/star_off.png",
         avalia: "2.421",
 
         oldprice: 1787.88,
@@ -88,19 +88,19 @@ const items = [
 
     {
         id: 41506,
-        img: "../img/prod4.png",
+        img: "../images/prod4.png",
         nome: "Teclado Gamer Logitech Prodigy G213, RGB, Black, ABNT2, 920-009438",
 
-        other1: "../img/prod4_other1.png",
-        other2: "../img/prod4_other2.png",
-        other3: "../img/prod4_other3.png",
-        other4: "../img/prod4_other4.png",
+        other1: "../images/prod4_other1.png",
+        other2: "../images/prod4_other2.png",
+        other3: "../images/prod4_other3.png",
+        other4: "../images/prod4_other4.png",
         
-        rate1: "../img/star_on.png",
-        rate2: "../img/star_on.png",
-        rate3: "../img/star_on.png",
-        rate4: "../img/star_on.png",
-        rate5: "../img/star_on.png", 
+        rate1: "../images/star_on.png",
+        rate2: "../images/star_on.png",
+        rate3: "../images/star_on.png",
+        rate4: "../images/star_on.png",
+        rate5: "../images/star_on.png", 
         avalia: "1.994",
 
         oldprice: 588.12,
@@ -117,19 +117,19 @@ const items = [
 
     {
         id: 51305,
-        img: "../img/prod5.png",
+        img: "../images/prod5.png",
         nome: "Processador AMD Athlon 3000G 3.5GHz + Cooler AMD Wraith Stealth",
 
-        other1: "../img/prod5_other1.png",
-        other2: "../img/prod5_other2.png",
-        other3: "../img/prod5_other3.png",
-        other4: "../img/prod5_other4.png",
+        other1: "../images/prod5_other1.png",
+        other2: "../images/prod5_other2.png",
+        other3: "../images/prod5_other3.png",
+        other4: "../images/prod5_other4.png",
         
-        rate1: "../img/star_on.png",
-        rate2: "../img/star_on.png",
-        rate3: "../img/star_on.png",
-        rate4: "../img/star_off.png",
-        rate5: "../img/star_off.png", 
+        rate1: "../images/star_on.png",
+        rate2: "../images/star_on.png",
+        rate3: "../images/star_on.png",
+        rate4: "../images/star_off.png",
+        rate5: "../images/star_off.png", 
         avalia: "1382",
 
         oldprice: 516.35,
@@ -146,19 +146,19 @@ const items = [
 
     {
         id: 12309,
-        img: "../img/prod6.png",
+        img: "../images/prod6.png",
         nome: "PC Gamer S-Gamer Custo Beneficio 2022 Ryzen 5 5600X / NVIDIA GeForce RTX 3060 / DDR4 16GB(2x8) / SSD 480GB",
 
-        other1: "../img/prod6_other1.png",
-        other2: "../img/prod6_other2.png",
-        other3: "../img/prod6_other3.png",
-        other4: "../img/prod6_other4.png",
+        other1: "../images/prod6_other1.png",
+        other2: "../images/prod6_other2.png",
+        other3: "../images/prod6_other3.png",
+        other4: "../images/prod6_other4.png",
         
-        rate1: "../img/star_on.png",
-        rate2: "../img/star_on.png",
-        rate3: "../img/star_on.png",
-        rate4: "../img/star_off.png",
-        rate5: "../img/star_off.png", 
+        rate1: "../images/star_on.png",
+        rate2: "../images/star_on.png",
+        rate3: "../images/star_on.png",
+        rate4: "../images/star_off.png",
+        rate5: "../images/star_off.png", 
         avalia: "246",
 
         oldprice: 7797.17,
@@ -174,19 +174,19 @@ const items = [
 
     {
         id: 22408,
-        img: "../img/prod7.png",
+        img: "../images/prod7.png",
         nome: "PC Gamer S-Gamer FrameMaster AMD Ryzen 5 5600X / NVIDIA GeForce RTX 2060 / 8GB DDR4 / SSD 240GB",
 
-        other1: "../img/prod7_other1.png",
-        other2: "../img/prod7_other2.png",
-        other3: "../img/prod7_other3.png",
-        other4: "../img/prod7_other4.png",
+        other1: "../images/prod7_other1.png",
+        other2: "../images/prod7_other2.png",
+        other3: "../images/prod7_other3.png",
+        other4: "../images/prod7_other4.png",
         
-        rate1: "../img/star_on.png",
-        rate2: "../img/star_on.png",
-        rate3: "../img/star_on.png",
-        rate4: "../img/star_on.png",
-        rate5: "../img/star_off.png", 
+        rate1: "../images/star_on.png",
+        rate2: "../images/star_on.png",
+        rate3: "../images/star_on.png",
+        rate4: "../images/star_on.png",
+        rate5: "../images/star_off.png", 
         avalia: "198",
 
         oldprice: 6725.42,
@@ -202,19 +202,19 @@ const items = [
 
     {
         id: 32407,
-        img: "../img/prod8.png",
+        img: "../images/prod8.png",
         nome: "PC Gamer S-Gamer Brave AMD Ryzen 5 7600X / NVIDIA GeForce RTX 3070 / 16GB DDR5 / SSD 240GB",
 
-        other1: "../img/prod8_other1.png",
-        other2: "../img/prod8_other2.png",
-        other3: "../img/prod8_other3.png",
-        other4: "../img/prod8_other4.png",
+        other1: "../images/prod8_other1.png",
+        other2: "../images/prod8_other2.png",
+        other3: "../images/prod8_other3.png",
+        other4: "../images/prod8_other4.png",
         
-        rate1: "../img/star_on.png",
-        rate2: "../img/star_on.png",
-        rate3: "../img/star_on.png",
-        rate4: "../img/star_on.png",
-        rate5: "../img/star_off.png", 
+        rate1: "../images/star_on.png",
+        rate2: "../images/star_on.png",
+        rate3: "../images/star_on.png",
+        rate4: "../images/star_on.png",
+        rate5: "../images/star_off.png", 
         avalia: "114",
 
         oldprice: 11961.74,
@@ -230,19 +230,19 @@ const items = [
 
     {
         id: 42406,
-        img: "../img/prod9.png",
+        img: "../images/prod9.png",
         nome: "PC Gamer T-Gamer Prodigy AMD Ryzen 5 5600G / 16GB DDR4 / SSD 480GB",
 
-        other1: "../img/prod9_other1.png",
-        other2: "../img/prod9_other2.png",
-        other3: "../img/prod9_other3.png",
-        other4: "../img/prod9_other4.png",
+        other1: "../images/prod9_other1.png",
+        other2: "../images/prod9_other2.png",
+        other3: "../images/prod9_other3.png",
+        other4: "../images/prod9_other4.png",
         
-        rate1: "../img/star_on.png",
-        rate2: "../img/star_on.png",
-        rate3: "../img/star_on.png",
-        rate4: "../img/star_on.png",
-        rate5: "../img/star_off.png", 
+        rate1: "../images/star_on.png",
+        rate2: "../images/star_on.png",
+        rate3: "../images/star_on.png",
+        rate4: "../images/star_on.png",
+        rate5: "../images/star_off.png", 
         avalia: "96",
 
         oldprice: 3933.75,
@@ -258,19 +258,19 @@ const items = [
 
     {
         id: 52405,
-        img: "../img/prod10.jpg",
+        img: "../images/prod10.jpg",
         nome: "PC Gamer T-Gamer Prodigy AMD Ryzen 5 5600G / 16GB DDR4 / SSD 480GB",
 
-        other1: "../img/prod10_other1.png",
-        other2: "../img/prod10_other2.png",
-        other3: "../img/prod10_other3.png",
-        other4: "../img/prod10_other4.png",
+        other1: "../images/prod10_other1.png",
+        other2: "../images/prod10_other2.png",
+        other3: "../images/prod10_other3.png",
+        other4: "../images/prod10_other4.png",
         
-        rate1: "../img/star_on.png",
-        rate2: "../img/star_on.png",
-        rate3: "../img/star_on.png",
-        rate4: "../img/star_on.png",
-        rate5: "../img/star_off.png", 
+        rate1: "../images/star_on.png",
+        rate2: "../images/star_on.png",
+        rate3: "../images/star_on.png",
+        rate4: "../images/star_on.png",
+        rate5: "../images/star_off.png", 
         avalia: "96",
 
         oldprice: 3933.75,
